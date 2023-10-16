@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="src/perhitungan.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator IPK SMK</h1>
+      <form id="ipk-form">
+        <div class="input-group">
+          <label for="bahasaIndonesia">Bahasa Indonesia</label>
+          <input type="number" id="bahasaIndonesia" step="0.1" min="0" max="10" />
+        </div>
+        <div class="input-group">
+          <label for="bahasaInggris">Bahasa Inggris</label>
+          <input type="number" id="bahasaInggris" step="0.1" min="0" max="10" />
+        </div>
+        <div class="input-group">
+          <label for="matematika">Matematika</label>
+          <input type="number" id="matematika" step="0.1" min="0" max="10" />
+        </div>
+        <div class="input-group">
+          <label for="kompetensi">Kompetensi</label>
+          <input type="number" id="kompetensi" step="0.1" min="0" max="10" />
+        </div>
+        <button type="button" onclick="hitungIPK()">Hitung IPK</button>
+      </form>
+      <br />
+      <div id="result"></div>
+      <button id="back-button" onclick="kembaliKeHalamanUtama()">Kembali ke halaman utama</button>
+    </div>
+
+    <script src="dist/js/perhitungan.js" mb-2></script>
+  </body>
+</html>
